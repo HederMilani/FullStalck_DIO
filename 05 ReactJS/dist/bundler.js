@@ -1,22 +1,34 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/04 WebPack.jsx":
-/*!****************************!*\
-  !*** ./src/04 WebPack.jsx ***!
-  \****************************/
+/***/ "./src/05 Renderização.jsx":
+/*!*********************************!*\
+  !*** ./src/05 Renderização.jsx ***!
+  \*********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
+var buttonA = /*#__PURE__*/React.createElement("button", null, "Hist\xF3rico");
+var bottonB = /*#__PURE__*/React.createElement("button", null, "Cadsatro Cliente");
+var hasCustomer = true;
 
-var App = function App() {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", null, "Hello Word"), /*#__PURE__*/React.createElement("p", null, "Bem vindo a aula de WebPack"));
+var Renderizacao = function Renderizacao() {
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Hello Word"), /*#__PURE__*/React.createElement("p", null), hasCustomer &&
+  /*#__PURE__*/
+  //Realiza a verificação se verdadeiro procegue com o código entre parenteses
+  React.createElement("div", null, "Clique no bot\xE3o para visualisar o Hist\xF3rico", /*#__PURE__*/React.createElement("br", null), buttonA), hasCustomer ?
+  /*#__PURE__*/
+  //Realiza a verificação se componente verdadeiro com a opção do falso
+  React.createElement("div", null, "Clique no bot\xE3o para visualizar o Hist\xF3rico", /*#__PURE__*/React.createElement("br", null), buttonA) :
+  /*#__PURE__*/
+  //Apresentação do else caso a verificação seja falsa
+  React.createElement("div", null, "Clique no bot\xE3o para incluir Cliente", /*#__PURE__*/React.createElement("br", null), bottonB));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (App);
+/* harmony default export */ __webpack_exports__["default"] = (Renderizacao);
 
 /***/ }),
 
@@ -29930,12 +29942,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _04_WebPack_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./04 WebPack.jsx */ "./src/04 WebPack.jsx");
+/* harmony import */ var _05_Renderiza_o_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./05 Renderização.jsx */ "./src/05 Renderização.jsx");
 
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_0__.render( /*#__PURE__*/React.createElement(_04_WebPack_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), document.getElementById("root"));
+react_dom__WEBPACK_IMPORTED_MODULE_0__.render( /*#__PURE__*/React.createElement(_05_Renderiza_o_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), document.getElementById("root"));
 }();
 /******/ })()
 ;

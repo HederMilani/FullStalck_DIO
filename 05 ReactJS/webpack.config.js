@@ -20,9 +20,13 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        extensions: ['.js', 'jsx'],
+    },
+
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/index.html",           //Arquivo que será interpretado pelo webpack
+            template: "./public/index.html",           //Arquivo que será interpretado pelo webpack
             filename: "./index.html"                //Arquivo que será gerado pelo webpack
         })
     ]
