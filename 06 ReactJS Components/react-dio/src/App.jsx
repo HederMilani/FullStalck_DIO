@@ -1,7 +1,14 @@
+import Item from "./Components/Item";
+
 const App = () => {
   return (
     <div>
-      Hello Word !!! 
+      <h1>Minha primeira aplicação em React</h1>
+      <ul>
+        {Item('Item 10')}
+        {Item('Item 20')}
+        {Item('Item 30')} 
+      </ul> 
     </div>
   )
 }
